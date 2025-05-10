@@ -1,0 +1,568 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+body {
+    overflow: hidden;
+    background-image: url(src/images/table1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    width: 100%;
+  }
+  
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .book-container {
+    perspective: 1000px;
+  }
+  
+  .book-wrapper {
+    width: 80vh;
+    height: 95vh;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .div{
+    width: 90%;
+    height: 90%;
+    border: solid 2px #F9F0E7;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div.dentro{
+    border: solid 2px #C91919;
+  }
+  
+  .book-cover {
+    background-color: #C91919;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book-container:hover .book-cover {
+    transform: rotateY(-180deg);
+  }
+  
+  .book-cover span {
+    font-size: xx-large;
+    font-family: "Climate Crisis", sans-serif;
+    color: #F9F0E7;
+  }
+
+  .book-content span{
+    font-size: xx-large;
+    font-family: "Climate Crisis", sans-serif;
+    color: #C91919;
+  }
+
+  .bebidas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 40px;
+  }
+
+  .bebida {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .spacer {
+    flex-grow: 1;
+    border-bottom: dotted 1.5px #312320;
+  }
+
+  .bebida span{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #312320;
+  }
+
+  .lanches{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+  }
+
+  .lanche{
+    display: flex;
+  }
+
+  .lanche span{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #312320;
+  }
+
+  .lanches .h5, .bebidas .h5{
+    font-family: "Climate Crisis", sans-serif;
+    color: #312320;
+    font-weight: 400;
+    font-size: large;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .quantity{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 40px 0px 20px;
+  }
+
+  .quantity input{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #312320;
+    outline: none;
+  }
+
+  .book-cover img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .book-content {
+    background-color: #F9F0E7;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+  
+  .btn{
+    background-color: #C91919;
+    color: #F9F0E7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 150px;
+    }
+
+
+/* PROCESS.PHP */
+.recipy{
+  width: 50vh;
+  height: 75vh;
+  background: url(src/images/textura1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipy .div{
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.recipy .div span{
+  font-size: small;
+  font-family: "Climate Crisis", sans-serif;
+  color: #312320;
+}
+
+.recipy .div span.baixo{
+  margin-bottom: 10px;
+}
+
+.recipy .div img{
+  width: 130px;
+  object-fit: cover;
+}
+
+.recipy .spacer{
+  display: flex;
+  width: 100%;
+  border-bottom: dashed 2px #312320;
+}
+
+.recipy .info-content{
+  width: 100%;
+  display: flex;
+}
+
+.recipy .eqd{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: flex-start;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.recipy .drt{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: flex-end;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.recipy .info-content .eqd.titulo, .recipy .info-content .drt.titulo{
+  padding: 10px 0px 10px 0px;
+  font-size: medium;
+}
+
+.recipy .total{
+  padding: 5px 0px 5px 0px;
+}
+
+.recipy .qtd, .recipy .dinheiros{
+  width: 100%;
+  display: flex;
+}
+
+.tchau{
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.date{
+  font-size: smaller;
+}
+
+.end{
+  padding: 10px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+body {
+    overflow: hidden;
+    background-image: url(src/images/table1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    width: 100%;
+  }
+  
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .book-container {
+    perspective: 1000px;
+  }
+  
+  .book-wrapper {
+    width: 80vh;
+    height: 95vh;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .div{
+    width: 90%;
+    height: 90%;
+    border: solid 2px #F9F0E7;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div.dentro{
+    border: solid 2px #C91919;
+  }
+  
+  .book-cover {
+    background-color: #C91919;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book-container:hover .book-cover {
+    transform: rotateY(-180deg);
+  }
+  
+  .book-cover span {
+    font-size: xx-large;
+    font-family: "Climate Crisis", sans-serif;
+    color: #F9F0E7;
+  }
+
+  .book-content span{
+    font-size: xx-large;
+    font-family: "Climate Crisis", sans-serif;
+    color: #C91919;
+  }
+
+  .bebidas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 40px;
+  }
+
+  .bebida {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .spacer {
+    flex-grow: 1;
+    border-bottom: dotted 1.5px #312320;
+  }
+
+  .bebida span{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #312320;
+  }
+
+  .lanches{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+  }
+
+  .lanche{
+    display: flex;
+  }
+
+  .lanche span{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #312320;
+  }
+
+  .lanches .h5, .bebidas .h5{
+    font-family: "Climate Crisis", sans-serif;
+    color: #312320;
+    font-weight: 400;
+    font-size: large;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .quantity{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 40px 0px 20px;
+  }
+
+  .quantity input{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #312320;
+    outline: none;
+  }
+
+  .book-cover img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .book-content {
+    background-color: #F9F0E7;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+  
+  .btn{
+    background-color: #C91919;
+    color: #F9F0E7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 150px;
+    }
+
+
+/* PROCESS.PHP */
+.recipy{
+  width: 50vh;
+  height: 75vh;
+  background: url(src/images/textura1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipy .div{
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.recipy .div span{
+  font-size: small;
+  font-family: "Climate Crisis", sans-serif;
+  color: #312320;
+}
+
+.recipy .div span.baixo{
+  margin-bottom: 10px;
+}
+
+.recipy .div img{
+  width: 130px;
+  object-fit: cover;
+}
+
+.recipy .spacer{
+  display: flex;
+  width: 100%;
+  border-bottom: dashed 2px #312320;
+}
+
+.recipy .info-content{
+  width: 100%;
+  display: flex;
+}
+
+.recipy .eqd{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: flex-start;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.recipy .drt{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: flex-end;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.recipy .info-content .eqd.titulo, .recipy .info-content .drt.titulo{
+  padding: 10px 0px 10px 0px;
+  font-size: medium;
+}
+
+.recipy .total{
+  padding: 5px 0px 5px 0px;
+}
+
+.recipy .qtd, .recipy .dinheiros{
+  width: 100%;
+  display: flex;
+}
+
+.tchau{
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.date{
+  font-size: smaller;
+}
+
+.end{
+  padding: 10px;
+>>>>>>> b2463304627d7aca35337237556415c1029bee02
+}
